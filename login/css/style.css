@@ -1,0 +1,120 @@
+/*Star navbar*/
+.navbar-nav .nav-link {
+    font-size: 18px;
+    text-transform: uppercase;
+
+
+}
+
+/*End navbar*/
+
+@media(min-width:990px) {
+    .navbar-nav .nav-link {
+
+        padding-left: 20px !important;
+
+
+    }
+}
+
+@media (max-width : 576px) {
+.sigininlink {
+    width: 100%;
+}
+}
+/*End navbar*/
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+
+
+
+}
+
+.login {
+    background: url("../img/me.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white; 
+
+}
+
+.box {
+
+    width: 400px;   
+    padding: 50px ;
+    box-sizing: border-box;
+    box-shadow:  0 15px 25px rgba(0,0,0,0.5);
+    border-radius: 10px;
+
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.box h2{
+    margin: 0 0  30px;
+    padding: 0;
+    color: #FFF;
+    text-align: center;
+}
+
+.box .inputBox {
+    position: relative;
+}
+
+.box .inputBox input {
+	width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #FFF;
+    margin-bottom: 30px;
+    border: none;
+    outline: none;
+    background: transparent;
+     border-bottom: 1px solid #FFF;
+}
+
+.box .inputBox label{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #FFF;
+    pointer-events: none;
+    transition: 0.3s;
+}
+
+.box .inputBox input:focus ~ label,
+.box .inputBox input:valid ~ label{
+ top: -20px;  
+    left:0; 
+    font-size: 14px;
+    color:red;
+}
+
+.box  input[type="submit"]
+{
+    background-color: transparent;
+    border: none; 
+    outline: none;
+    color:white;
+    background-color: red;
+    padding: 10px 20px;
+    border-radius: 5px;
+    
+}
+
+
+@media (max-width: 576px) { .box {
+
+    width: 350px;   
+    padding: 25px ;
+   
+   
+} }
